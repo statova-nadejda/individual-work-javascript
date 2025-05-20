@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Metal Mania', cursive;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+              url('./../images/back.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0;
+  padding-bottom: 60px;
+}
+
+nav.menu {
+  background-color: #111;
+  padding: 25px 0;
+  text-align: center;
+  border-bottom: 2px solid #d10000;
+}
+
+nav.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+nav.menu a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 25px;
+  transition: color 0.3s;
+}
+
+nav.menu a:hover {
+  color: #ff3300;
+  text-shadow: 0 0 5px #ff3300;
+}
+
+header {
+  text-align: center;
+  padding: 60px 30px 30px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff6600;
+}
+
+header p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#bands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  border-top: 2px solid #d10000;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ff3300;
+}

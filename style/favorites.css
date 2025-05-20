@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+body {
+  background: #121212; /* очень тёмный фон */
+  color: #e0e0e0;      /* светло-серый текст */
+  font-family: 'Metal Mania', cursive, Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 0 15px;
+  user-select: none;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #d32f2f; /* роковый красный */
+  text-shadow: 2px 2px 4px #000;
+  letter-spacing: 0.1em;
+}
+
+#favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#favorites-list p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+#favorites-list li {
+  background: #1f1f1f;
+  border: 2px solid #d32f2f;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+  cursor: default;
+}
+
+#favorites-list li:hover {
+  background: #d32f2f;
+  color: #121212;
+  box-shadow: 0 0 15px #d32f2f;
+}
+
+#favorites-list button {
+  background: transparent;
+  border: 2px solid #d32f2f;
+  color: #f4efef;
+  font-family: 'Metal Mania', cursive, Arial, sans-serif;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+#favorites-list button:hover {
+  background: #d32f2f;
+  color: #121212;
+  box-shadow: 0 0 8px #d32f2f;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+  #favorites-list li {
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #favorites-list button {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+}

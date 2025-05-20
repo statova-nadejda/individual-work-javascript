@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  font-family: 'Rock Salt', cursive, sans-serif;
+  color: #f5f5f5;
+  line-height: 1.6;
+  background: 
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('./../images/brand-back.jpg') center/cover no-repeat fixed;}
+
+/* Контейнер описания группы */
+#band-details {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1c1c1c;
+  border: 2px solid #444;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Название группы */
+#band-name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ff4444;
+  text-shadow: 0 0 10px #ff0000;
+  margin-bottom: 20px;
+}
+
+/* Картинка */
+#band-image {
+  width: 50%;
+  max-height: 400px;
+  object-fit: cover;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Годы активности и история */
+#band-years,
+#band-history {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+/* Заголовок треков */
+h3 {
+  font-size: 1.4rem;
+  color: #ff4444;
+  text-shadow: 0 0 5px #f00;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Список песен */
+#band-songs {
+  list-style: none;
+  padding: 0;
+}
+
+#band-songs li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#band-songs li:hover {
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #f00;
+}
+.add-favorites-button {
+  background-color: #ff0000;
+  color: white;
+  border: 2px solid #000;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 0 #000, 0 5px 10px rgba(0,0,0,0.4);
+}
+
+.add-favorites-button:hover {
+  background-color: #000;
+  color: #ff0000;
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #000, 0 3px 5px rgba(0,0,0,0.4);
+}
+
+.add-favorites-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #000;
+}
