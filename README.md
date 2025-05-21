@@ -5,7 +5,7 @@
 1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/statova-nadejda/individual-work-javascript.git
-   cd lab3-JavaScript
+   cd individual-work-javascript
    ```
 2. Запустите проект в `VS Code` при помощи среды выполнения кода `Node.js`
 
