@@ -28,7 +28,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("band-name").textContent = band.name;
     document.getElementById("band-image").src = band.image;
     document.getElementById("band-image").alt = band.name;
-    document.getElementById("band-years").textContent = `Годы активности: ${band.years}`;
+    document.getElementById(
+      "band-years"
+    ).textContent = `Годы активности: ${band.years}`;
     document.getElementById("band-history").textContent = band.history;
 
     const tracksList = document.getElementById("band-songs");
@@ -49,10 +51,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       li.appendChild(button);
       tracksList.appendChild(li);
     });
-
   } catch (error) {
     console.error("Ошибка загрузки:", error);
-    document.getElementById("band-details").innerText = "Ошибка загрузки данных.";
+    document.getElementById("band-details").innerText =
+      "Ошибка загрузки данных.";
   }
 });
 

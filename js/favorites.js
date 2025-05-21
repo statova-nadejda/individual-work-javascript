@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const favorites = JSON.parse(localStorage.getItem("favoriteSongs")) || [];
 
   if (favorites.length === 0) {
-    favoritesList.innerHTML = "<p>Вы пока ничего не добавили в избарнные треки</p>";
+    favoritesList.innerHTML =
+      "<p>Вы пока ничего не добавили в избарнные треки</p>";
     return;
   }
 
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Удалить";
-    
+
     /**
      * Handles removal of a favorite track.
      * - Removes the track from the array.
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     deleteButton.addEventListener("click", () => {
       favorites.splice(index, 1);
       localStorage.setItem("favoriteSongs", JSON.stringify(favorites));
-      location.reload(); 
+      location.reload();
     });
 
     li.appendChild(deleteButton);

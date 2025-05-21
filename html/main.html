@@ -15,6 +15,17 @@
     </nav>
     <header>
       <h1>Rock Legends</h1>
+      <div>
+        <button type="button" id="get-random-fact-button">
+          Нажми, чтобы узнать факт дня
+        </button>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <button class="close">✖</button>
+          <p id="random-fact-field"></p>
+        </div>
+      </div>
       <p>Самые влиятельные рок-группы в истории</p>
       <p>
         Добро пожаловать в мир громких гитар, бунтарского духа и бессмертных
@@ -27,8 +38,15 @@
         здесь.
       </p>
     </header>
-    <main>
-      <div id="bands-list"></div>
-    </main>
+    <body>
+    <footer>
+      <form id="subscribe-to-updates">
+        <input type="text" id="user-name" placeholder="Введите ваш ник">
+        <input type="email" id="user-email" placeholder="Ваш e-mail">
+        <input type="text" id="user-favourite-group" placeholder="Ваша любимая группа на данный момент">
+        <button type="button" id="subscribe-button">Подписаться на обновления</button>
+      </form>
+    </footer>
+    <script type="module" src="./../js/main.js"></script>
   </body>
 </html>

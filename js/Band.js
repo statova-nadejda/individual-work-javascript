@@ -26,8 +26,8 @@ export class Band {
    * @returns {HTMLDivElement} A div element containing the band's card.
    */
   createCard() {
-    const card = document.createElement('div');
-    card.className = 'band-card';
+    const card = document.createElement("div");
+    card.className = "band-card";
     card.innerHTML = `
       <img src="${this.image}" alt="${this.name}">
       <div class="band-content">
@@ -37,7 +37,8 @@ export class Band {
         </div>
       </div>
     `;
-    card.addEventListener('click', () => {
+    const learnMoreButton = card.querySelector(".learn-more-button");
+    learnMoreButton.addEventListener("click", () => {
       window.location.href = `band.html?id=${this.id}`;
     });
     return card;

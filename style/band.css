@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #111;
-  font-family: 'Rock Salt', cursive, sans-serif;
+  font-family: "Rock Salt", cursive, sans-serif;
   color: #f5f5f5;
   line-height: 1.6;
-  background: 
-  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-  url('./../images/brand-back.jpg') center/cover no-repeat fixed;}
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./../images/brand-back.jpg") center/cover no-repeat fixed;
+}
 
 /* Контейнер описания группы */
 #band-details {
@@ -92,14 +92,14 @@ h3 {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s;
-  box-shadow: 0 4px 0 #000, 0 5px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 0 #000, 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .add-favorites-button:hover {
   background-color: #000;
   color: #ff0000;
   transform: translateY(2px);
-  box-shadow: 0 2px 0 #000, 0 3px 5px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 0 #000, 0 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 .add-favorites-button:active {

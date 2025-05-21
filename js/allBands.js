@@ -1,11 +1,9 @@
-import { Band } from './Band.js'; 
+import { Band } from "./Band.js";
 
-fetch('./../bands.json')
-  .then(res => res.json())
-  .then(bandsData => {
-    const container = document.getElementById('bands-container');
-    bandsData.forEach(bandObj => {
-      const band = new Band(bandObj); 
-      container.appendChild(band.createCard()); 
-    });
-  });
+const getData = await fetch("./../bands.json");
+const formatData = await getData.json();
+const container = document.getElementById("bands-container");
+formatData.forEach((bandObj) => {
+  const band = new Band(bandObj);
+  container.appendChild(band.createCard());
+});
